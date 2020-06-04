@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_course_card"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentLeft="true"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_android"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_android"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Lorem Ipsum Dolor Emmet Here You Go Dear"
+                android:layout_below="@id/img_android"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:textColor="#555F6A"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="17dp"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/courseCompletionProgressBar"-->
+<!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="8dp"-->
+<!--                android:layout_below="@id/tv_android"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginHorizontal="10dp"-->
+<!--                android:indeterminate="false"-->
+<!--                android:max="100"-->
+<!--                android:visibility="gone"-->
+<!--                android:progress="100"-->
+<!--                android:progressDrawable="@drawable/custom_progress_bar"-->
+<!--                 />-->
+
+
+
+        </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+</RelativeLayout>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="180dp">-->
+<!--    <ImageView-->
+<!--        android:id="@+id/img_android"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_android"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="#000"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+<!--</FrameLayout>-->

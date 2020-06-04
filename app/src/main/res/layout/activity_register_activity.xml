@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Register_activity">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <TextView
+        android:id="@+id/user_registration"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/mytoolbar"
+        android:layout_height="wrap_content"
+        android:text="User Registration"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/user_registration"
+        >
+
+    <TextView
+
+        android:id="@+id/emailAddressForLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Enter Mobile No"
+
+        android:textSize="16sp"
+        android:textColor="@color/loginViewText"/>
+    <EditText
+        android:id="@+id/register_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailAddressForLoginTitle"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint=""
+        android:textSize="17sp"
+        android:textColorHint="@color/loginViewText"
+        android:textColor="@color/textColorGrey"
+        android:textCursorDrawable="@null"
+        android:windowSoftInputMode="adjustPan"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:backgroundTint="@color/loginViewText"
+        android:paddingBottom="10dp"
+        android:background="@drawable/edt_bg_selector"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_custom_blue_button"
+        android:textColor="@color/white"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:layout_below="@id/register_mobile_no"
+        android:layout_marginTop="40dp"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_grey_button"
+            android:textColor="@color/darkNavyBlue"
+            android:text="Already have an Account. Login here"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_below="@id/regButton"
+            android:layout_marginTop="20dp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
